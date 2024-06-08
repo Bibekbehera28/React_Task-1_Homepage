@@ -11,8 +11,8 @@ const Contact = () => {
     }
     return (
         <>
-        <form >
-        <h1>Contact page</h1>
+        <form id="contact">
+        <h1 style={{color:"green"}}>Contact us!</h1>
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
             <br />
@@ -24,7 +24,7 @@ const Contact = () => {
             <label for="country">Country</label>
             <select id="country" name="country">
                 <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
+                <option value="canada">india</option>
                 <option value="usa">USA</option>
             </select>
             <br />
@@ -35,11 +35,12 @@ const Contact = () => {
             <br />
             <br />
             <input id="sub" type="submit" value="Submit"></input>
-        </form>
-        <br />
+            <br />
         <button onClick={() => goToHome()}>Home</button>
         <br />
         <button onClick={() => goBack()}>Go Back</button>
+        </form>
+        <br />
         </>
     );
 };
